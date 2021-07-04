@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <head>
+        <link rel="stylesheet" href="s.css">
+    </head>
+
+    <h1>Robot Base</h1>
+<body>
+    
+    <form method="POST" action="index.php">
+    <input type="submit" value="Forward" name= Forward style= "background-color: orange; font-size: large;">
+    <br><br><br><br>
+    
+    <input type="submit" value="L"  name= L style= "background-color: green; font-size: large;"> &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="submit" value="Stop" name= Stop  style= "background-color: red; font-size: large;"> &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="submit" value="R" name= R style= "background-color: green; font-size: large;">
+<br> <br><br><br>
+    <input type="submit" value="Back" name= Back style= "background-color: orange; font-size: large;">
+
+
+
+</form>   
+
+<script>
+    window.watsonAssistantChatOptions = {
+        integrationID: "aa7a2465-cafd-48cd-8ca8-ebbd02346672", // The ID of this integration.
+        region: "eu-gb", // The region your integration is hosted in.
+        serviceInstanceID: "03b43cb4-18a3-46d2-9799-46a73c3cbab6", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+      document.head.appendChild(t);
+    });
+  </script>
+</body>
+
+
+
+
+
+</html>
